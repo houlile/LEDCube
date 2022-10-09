@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"leecube\startup_stm32f103xb.o"
+"leecube\main.o"
+"leecube\gpio.o"
+"leecube\stm32f1xx_it.o"
+"leecube\stm32f1xx_hal_msp.o"
+"leecube\stm32f1xx_hal_gpio_ex.o"
+"leecube\stm32f1xx_hal_tim.o"
+"leecube\stm32f1xx_hal_tim_ex.o"
+"leecube\stm32f1xx_hal.o"
+"leecube\stm32f1xx_hal_rcc.o"
+"leecube\stm32f1xx_hal_rcc_ex.o"
+"leecube\stm32f1xx_hal_gpio.o"
+"leecube\stm32f1xx_hal_dma.o"
+"leecube\stm32f1xx_hal_cortex.o"
+"leecube\stm32f1xx_hal_pwr.o"
+"leecube\stm32f1xx_hal_flash.o"
+"leecube\stm32f1xx_hal_flash_ex.o"
+"leecube\stm32f1xx_hal_exti.o"
+"leecube\system_stm32f1xx.o"
+--strict --scatter "LEECube\LEECube.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LEECube.map" -o LEECube\LEECube.axf
